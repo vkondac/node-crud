@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+<body>
+
+
+<h1>Tasks App</h1>
+
+
+<form action="/tasks" method="POST">
+    <input type="text" placeholder="Title" name="name">
+    <input type="text" placeholder="Description" name="description">
+    <button type="submit">Submit</button>
+  </form>
+  <h2>Tasks</h2>
+  <ul class="tasks">
+    <% for(var i = 0; i < tasks.length; i++) {%>
+      <li class="tasks">
+        <span><%= tasks[i].name %></span>:   
+        <span><%= tasks[i].description %></span>
+      </li>
+    <% } %>
+  </ul>
+  <p>
+    Edit first task
+  </p>
+  <button id="update-button">Edit first</button>
+
+
+
+</body>
+</html>
