@@ -6,7 +6,7 @@ const { deepStrictEqual } = require("assert");
 const app = express();
 
 connectionString =
-  "mongodb+srv://vkondac:Opethodamsam99@vanjatest1.gi8tmej.mongodb.net/?retryWrites=true&w=majority&authMechanism=DEFAULT";
+  "";
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); //server now accepts JSON data
